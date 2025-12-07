@@ -2,6 +2,6 @@ import { Button } from "@/components/ui/button"
 
 export default function Home() {
   return (
-    <Button variant="outline">RK Property Hub</Button>
+    <Button>RK Property Hub</Button>
   );
 }
