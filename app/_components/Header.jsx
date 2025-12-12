@@ -44,7 +44,7 @@ export default function Header() {
 
   return (
     <header className="bg-white">
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-0 lg:px-8">
         <div className="flex lg:flex-1">
           <Link href="#" className="-m-1.5 p-1.5">
             <Image
@@ -68,19 +68,19 @@ export default function Header() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
 
-          <Link href="#" className="text-lg font-normal tracking-wide text-gray-900 ">
+          <Link href="#" className="text-lg font-medium tracking-wide text-gray-900 ">
             Home
           </Link>
-          <Link href="#" className="text-lg font-normal tracking-wide text-gray-900">
+          <Link href="#" className="text-lg font-medium tracking-wide text-gray-900">
             About us
           </Link>
-          <Link href="#" className="text-lg font-normal tracking-wide text-gray-900">
+          <Link href="#" className="text-lg font-medium tracking-wide text-gray-900">
             Services
           </Link>
-          <Link href="#" className="text-lg font-normal tracking-wide text-gray-900">
+          <Link href="#" className="text-lg font-medium tracking-wide text-gray-900">
             Facilities
           </Link>
-          <Link href="#" className="text-lg font-normal tracking-wide text-gray-900">
+          <Link href="#" className="text-lg font-medium tracking-wide text-gray-900">
             Blogs
           </Link>
         </PopoverGroup>

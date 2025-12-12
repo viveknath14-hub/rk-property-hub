@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button"
+import Banner from "./_components/Banner";
 
 export default function Home() {
   return (
-    <Button>RK Property Hub</Button>
+    <div className="container mx-auto">
+    <Banner/>
+    </div>
+    
   );
 }
