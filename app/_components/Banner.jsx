@@ -14,9 +14,9 @@ function Banner() {
           <p className="text-gray-300 pt-5 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum vel soluta praesentium ad a assumenda minus facilis vitae at expedita! Quaerat, ut. Aspernatur repellendus repellat nostrum ex odio ullam id!
           </p>
           <div className="flex w-full gap-20 py-6 px-4">
-            <Image src="/assets/apartment-icon1.png" alt="Apartment 1" width={80} height={50} />
-            <Image src="/assets/apartment-icon2.png" alt="Apartment 2" width={80} height={50} />
-            <Image src="/assets/apartment-icon3.png" alt="Apartment 3" width={80} height={50} />
+            <Image src="/assets/icon1.png" alt="Apartment 1" width={80} height={50} />
+            <Image src="/assets/icon2.png" alt="Apartment 2" width={80} height={50} />
+            <Image src="/assets/icon3.png" alt="Apartment 3" width={80} height={50} />
           </div>
           <div className="">
           <div className="flex flex-col gap-4 ">
@@ -67,7 +67,7 @@ function Banner() {
           </div>
           {/* this for image */}
           <div className="">
-            <Image src="/assets/main-home-c1.jpg" alt="Home1-hero-banner" width={600} height={600} className="object-cover object-center rounded rounded-t-full px-10" />
+            <Image src="/assets/mainHomeC3.jpg" alt="Home1-hero-banner" width={600} height={600} className="object-cover object-center rounded rounded-t-full px-10" />
           </div>
         </div>
       </div>
