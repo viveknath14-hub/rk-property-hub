@@ -67,7 +67,7 @@ function Banner() {
           </div>
           {/* this for image */}
           <div className="">
-            <Image src="/assets/mainHomeC3.jpg" alt="Home1-hero-banner" width={600} height={600} className="object-cover object-center rounded rounded-t-full px-10" />
+            <Image src="/assets/mainHomeC3.jpg" alt="Home1-hero-banner" width={500} height={500} className="object-cover object-center rounded rounded-t-full px-10" />
           </div>
         </div>
       </div>
