@@ -36,13 +36,13 @@ const Footer = () => {
           </div>
 
           {/* Links */}
-          <div>
+          <div className='flex flex-col '>
             <h3 className="text-primary font-semibold mb-4">Links</h3>
             <ul className="space-y-2 text-sm text-white">
-              <li className="hover:text-white cursor-pointer">Home</li>
-              <li className="hover:text-white cursor-pointer">About Us</li>
-              <li className="hover:text-white cursor-pointer">Services</li>
-              <li className="hover:text-white cursor-pointer">Facilities</li>
+              <li><Link href="#" className="hover:text-primary cursor-pointer">Home</Link></li>
+             <li><Link href="#" className="hover:text-primary cursor-pointer">About Us</Link></li>
+              <li><Link href="#" className="hover:text-primary cursor-pointer">Services</Link></li>
+              <li><Link href="#" className="hover:text-primary cursor-pointer">Facilities</Link></li>
             </ul>
           </div>
 
@@ -50,10 +50,10 @@ const Footer = () => {
           <div>
             <h3 className="text-primary font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-sm text-white">
-              <li className="hover:text-white cursor-pointer">Facebook</li>
-              <li className="hover:text-white cursor-pointer">Instagram</li>
-              <li className="hover:text-white cursor-pointer">Support</li>
-              <li className="hover:text-white cursor-pointer">Twitter</li>
+              <li><Link href="#" className="hover:text-primary cursor-pointer">Facebook</Link></li>
+              <li><Link href="#" className="hover:text-primary cursor-pointer">Instagram</Link></li>
+              <li><Link href="#" className="hover:text-primary cursor-pointer">Support</Link></li>
+              <li><Link href="#" className="hover:text-primary cursor-pointer">Twitter</Link></li>
             </ul>
           </div>
 
