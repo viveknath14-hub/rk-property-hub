@@ -7,7 +7,7 @@ export const page = () => {
         <div className="bg-white text-black">
 
       {/* HERO SECTION */}
-      <section className="relative h-[70vh] flex items-center justify-center">
+      <section className="relative h-[90vh] flex items-center justify-center">
         {/* Background Image */}
         <img
           src="/assets/services.jpg"

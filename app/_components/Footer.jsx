@@ -18,7 +18,7 @@ const Footer = () => {
           {/* Logo + description */}
           <div className="col-span-2 lg:col-span-1 lg:pr-6">
             <div className="flex items-center mb-4 h-7">
-              <Link href="#" className="">
+              <Link href="/" className="">
                           <Image
                             src="/rkPropertyHub.png"
                             alt="RK Property Hub logo"
@@ -66,10 +66,10 @@ const Footer = () => {
           <div className='flex flex-col items-start text-left lg:mx-auto'>
             <h3 className="text-primary font-semibold mb-4">Links</h3>
             <ul className="space-y-2 text-sm text-white">
-              <li><Link href="#" className="hover:text-primary cursor-pointer">Home</Link></li>
-             <li><Link href="#" className="hover:text-primary cursor-pointer">About Us</Link></li>
-              <li><Link href="#" className="hover:text-primary cursor-pointer">Services</Link></li>
-              <li><Link href="#" className="hover:text-primary cursor-pointer">Facilities</Link></li>
+              <li><Link href="/" className="hover:text-primary cursor-pointer">Home</Link></li>
+             <li><Link href="/about" className="hover:text-primary cursor-pointer">About Us</Link></li>
+              <li><Link href="/services" className="hover:text-primary cursor-pointer">Services</Link></li>
+              <li><Link href="/facilities" className="hover:text-primary cursor-pointer">Facilities</Link></li>
             </ul>
           </div>
 

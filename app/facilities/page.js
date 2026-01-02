@@ -7,7 +7,7 @@ const page = () => {
         <div className="bg-white text-black">
 
       {/* HERO SECTION */}
-      <section className="relative h-[65vh] flex items-center justify-center">
+      <section className="relative h-[90vh] flex items-center justify-center">
         <img
           src="/assets/facilities11.jpg"
           alt="Industrial and commercial real estate facilities in Delhi NCR"

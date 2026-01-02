@@ -46,7 +46,7 @@ export default function Header() {
     <header className="bg-white">
       <nav aria-label="Global" className="relative mx-auto flex max-w-7xl items-center px-4 lg:px-8">
         <div className="flex flex-1">
-          <Link href="#" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Image
               src="/rkPropertyHub.png"
               alt="RK Property Hub logo"
@@ -69,16 +69,16 @@ export default function Header() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
 
-          <Link href="#" className="text-lg font-medium tracking-wide text-gray-900 ">
+          <Link href="/" className="text-lg font-medium tracking-wide text-gray-900 ">
             Home
           </Link>
-          <Link href="#" className="text-lg font-medium tracking-wide text-gray-900">
+          <Link href="/about" className="text-lg font-medium tracking-wide text-gray-900">
             About us
           </Link>
-          <Link href="#" className="text-lg font-medium tracking-wide text-gray-900">
+          <Link href="/services" className="text-lg font-medium tracking-wide text-gray-900">
             Services
           </Link>
-          <Link href="#" className="text-lg font-medium tracking-wide text-gray-900">
+          <Link href="/facilities" className="text-lg font-medium tracking-wide text-gray-900">
             Facilities
           </Link>
           <Link href="#" className="text-lg font-medium tracking-wide text-gray-900">

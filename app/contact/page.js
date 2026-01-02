@@ -72,7 +72,7 @@ const page = () => {
             <div className="overflow-hidden rounded-xl border border-gray-200 mb-5">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4571.5760450882635!2d77.08755546348416!3d28.725662570915382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d07b939bad1c7%3A0xb2a34370ed501837!2sRK%20Property%20Hub!5e0!3m2!1sen!2sin!4v1766837360145!5m2!1sen!2sin"
-                className="w-full h-[320px] border-0"
+                className="w-full h-\[320px\] border-0"
                 loading="lazy"
               />
             </div>

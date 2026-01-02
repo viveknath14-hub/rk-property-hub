@@ -1,8 +1,11 @@
+"use client";
 import { Handshake } from 'lucide-react';
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 
 function Banner() {
+
+  const [submitted, setSubmitted] = useState(false);
 
 const paidPartnershipBadge=[
   "Strong Alliance",
@@ -44,20 +47,74 @@ const paidPartnershipBadge=[
             </div>
 
             {/* SEARCH */}
-            <form className="flex flex-col sm:flex-row gap-4 max-w-md">
-              <input
-                type="text"
-                placeholder="Location"
-                className="w-full px-4 py-3 border rounded bg-white"
-                required
-              />
-              <button
-                className="px-6 py-3 bg-[#fdcd02] text-black rounded text-lg"
-                type="submit"
-              >
-                Search
-              </button>
-            </form>
+                  {/* CONTACT FORM */}
+                  <form
+                    className="max-w-md mt-6 space-y-4"
+                    onSubmit={(e) => {
+                      e.preventDefault();
+
+                      const name = e.target.name.value.trim();
+                      const mobile = e.target.mobile.value.trim();
+                       setSubmitted(true);
+
+                      const message = `Hi, my name is ${name}. I am interested in property consultation. My mobile number is ${mobile}.`;
+
+                      const whatsappNumber = "919654316965"; // own whatsapp here
+
+                      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+                        message
+                      )}`;
+                      
+                       setTimeout(() => {
+                      window.open(whatsappURL, "_blank");
+                    }, 800)}}
+                  >
+                    <input
+                      type="text"
+                      name="name"                 // 👈 IMPORTANT
+                      placeholder="Your Name"
+                      className="w-full px-4 py-3 border rounded bg-white"
+                      required
+                    />
+
+                    <input
+                      type="tel"
+                      name="mobile"               // 👈 IMPORTANT
+                      placeholder="Mobile Number (10 digits)"
+                      className="w-full px-4 py-3 border rounded bg-white"
+                      inputMode="numeric"
+                      maxLength={10}
+                      pattern="[6-9][0-9]{9}"
+                      required
+                      onInput={(e) => {
+                        e.target.value = e.target.value.replace(/\D/g, "").slice(0, 10);
+                      }}
+                    />
+
+                    <button
+                        type="submit"
+                        disabled={submitted}
+                        className={`
+                          w-full px-4 py-3 rounded font-medium text-lg transition-all duration-300
+                          ${
+                            submitted
+                              ? "bg-green-500 text-white cursor-not-allowed"
+                              : "bg-[#fdcd02] text-black hover:opacity-90 active:scale-95"
+                          }
+                        `}
+                      >
+                        {submitted ? "Query Submitted!" : "Contact Us"}
+                      </button>
+
+                          {/* SUCCESS MESSAGE */}
+                          {submitted && (
+                            <p className="text-green-600 text-sm text-center animate-pulse">
+                              ✅ Query submitted! We’ll contact you shortly.
+                            </p>
+                          )}
+                  </form>
+
+
           </div>
 
           {/* RIGHT IMAGE + OVERLAPS */}
