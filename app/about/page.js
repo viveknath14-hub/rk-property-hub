@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const page = () => {
   return (
@@ -221,9 +222,11 @@ const page = () => {
           Whether you are buying your first home or planning a long-term investment,
           RK Property Hub is here to guide you.
         </p>
+        <Link href = '/contact'>
         <button className="mt-8 px-8 py-3 bg-[#fdcd02] text-black font-medium hover:opacity-90 transition">
           Contact Us
         </button>
+        </Link>
       </section>
 
     </div>

@@ -123,12 +123,39 @@ export default function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Home</Link>
-                <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">About us</Link>
-                <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Services</Link>
-                <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Facilities</Link>
-                <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Blogs</Link>
+                <Link href="/" onClick={() => setMobileMenuOpen(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Home</Link>
+                <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">About us</Link>
+                <Link href="/services" onClick={() => setMobileMenuOpen(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Services</Link>
+                <Link href="/facilities" onClick={() => setMobileMenuOpen(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Facilities</Link>
+                <Link href="#" onClick={() => setMobileMenuOpen(false)} className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Blogs</Link>
               </div>
+              {/* MOBILE CTA BUTTONS */}
+                <div className="py-6">
+                  <div className="flex gap-3">
+                    
+                    {/* CONTACT US */}
+                    <Link href="/contact#contact" onClick={() => setMobileMenuOpen(false)} className="flex-1">
+                      <Button className="w-full flex items-center justify-center gap-2">
+                        <User2Icon size={18} />
+                        Contact us
+                      </Button>
+                    </Link>
+
+                    {/* VISIT NOW */}
+                    <Link href="/contact#visit" onClick={() => setMobileMenuOpen(false)} className="flex-1">
+                      <Button
+                        variant="secondary"
+                        className="w-full flex items-center justify-center gap-2"
+                      >
+                        <MapPinHouse size={18} />
+                        Visit now
+                      </Button>
+                    </Link>
+
+                  </div>
+                </div>
+
+          
               {/* <div className="py-6">
                 <Link href="#" className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</Link >
               </div> */}

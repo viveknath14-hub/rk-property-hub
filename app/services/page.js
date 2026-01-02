@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react'
 
 export const page = () => {
@@ -210,9 +211,11 @@ export const page = () => {
           Whether it’s residential, commercial, or industrial property,
           we help you move forward with clarity and confidence.
         </p>
+        <Link href='/contact'>
         <button className="mt-8 px-8 py-3 bg-[#fdcd02] text-black font-medium hover:opacity-90 transition">
           Get in Touch
         </button>
+        </Link>
       </section>
 
     </div>

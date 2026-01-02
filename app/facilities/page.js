@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const page = () => {
@@ -127,9 +128,11 @@ const page = () => {
           From industrial warehouses to residential homes, our facilities are
           built to simplify real estate decisions across Delhi NCR.
         </p>
+        <Link href='/contact'>
         <button className="mt-8 px-8 py-3 bg-[#fdcd02] text-black font-medium hover:opacity-90 transition">
           Contact Us
         </button>
+        </Link>
       </section>
 
       {/* SEO BOOST (hidden but effective) */}
