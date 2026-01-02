@@ -1,64 +1,120 @@
-import { Button } from '@headlessui/react'
-import { HomeModernIcon } from '@heroicons/react/24/outline'
-import { HomeIcon } from 'lucide-react'
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 const Services = () => {
   return (
-    <div>
-        <div className='container py-10'>
-              <div className="grid grid-cols-2 items-center gap-20">
-                <div className=" relative">
-                  <Image src="/assets/Plot11.jpg" alt="about" width={500} height={600} className="object-center rounded rounded-t-full bg-gray-300/20 backdrop-blur-sm shadow-md p-4 mx-10 "/>
-                  <div className="absolute top-5 right-40">
-                    <div className=" w-32 bg-opacity-20 bg-gray-400/60 rounded-t-full p-2 shadow-md">
-                      <div className=" w-28 bg-white rounded-t-full shadow-md p-2 ">
-                        <div className="w-24 bg-[#fdcd02] rounded-t-full p-4">
-                          <h1 className="text-xl font-semibold text-center pt-2">Super sale!
-                          </h1>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="mx-10 ">
-                  <h1 className="text-6xl font-semibold py-5 text-black capitalize">
-                    Get a plot for your 
-                    <span className='text-[#fdcd02]'> Dream Home</span>
-                  </h1>
-                  <p className="pt-5 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum vel soluta praesentium ad a assumenda minus facilis vitae at expedita! Quaerat, ut. Aspernatur repellendus repellat nostrum ex odio ullam id!
-                  </p>
-                  <div className=" mt-10 ">
-                    <div className="grid grid-cols-9 gap-2 ">
-                     <div className="col-span-2  flex justify-center items-start my-10 hover:scale-110 duration-300">
-                      <Image src="/assets/rupeeicon.png" alt="about" width={40} height={50} />
-                     </div>
-                     <div className="col-span-7">
-                      <h2 className='text-2xl font-semibold mb-3'>The ability to identify plot market</h2>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim facere deserunt neque iure repellendus, vel aliquid ducimus mollitia eligendi, architecto debitis possimus perferendis, blanditiis vitae perspiciatis accusantium hic vero necessitatibus.
-                      </p>
-                     </div>
-                    </div>
-                    <div className=" mt-5 ">
-                    <div className="grid grid-cols-9 gap-2 ">
-                     <div className="col-span-2 flex justify-center items-start my-10 hover:scale-110 duration-300">
-                      <Image src="/assets/partnershipicon.png" alt="about" width={50} height={50} />
-                     </div>
-                     <div className="col-span-7">
-                      <h2 className='text-2xl font-semibold mb-3'>The ability to find better partnerships</h2>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim facere deserunt neque iure repellendus, vel aliquid ducimus mollitia eligendi, architecto debitis possimus perferendis, blanditiis vitae perspiciatis accusantium hic vero necessitatibus.
-                      </p>
-                     </div>
-                     </div>
-                    </div>
+    <section className="w-full py-10 overflow-hidden">
+      {/* WRAPPER */}
+      <div
+        className="
+          px-4
+          sm:px-6
+          sm:max-w-7xl
+          sm:mx-auto
+          lg:mx-5
+          lg:max-w-none
+        "
+      >
+        {/* MAIN GRID */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-20">
+
+          {/* IMAGE + BADGE */}
+          <div className="relative justify-center lg:justify-end ">
+            <Image
+              src="/assets/Plot11.jpg"
+              alt="about"
+              width={500}
+              height={600}
+              className="rounded-t-full bg-gray-300/20 backdrop-blur-sm shadow-md p-4"
+            />
+
+            {/* SUPER SALE BADGE */}
+            <div
+                  className="
+                    absolute
+                    top-0 left-1
+                    scale-75
+                    lg:scale-100
+                    lg:top-5 lg:right-40
+                    lg:left-auto
+                  "
+                >
+
+              <div className="w-32 bg-gray-400/60 rounded-t-full p-2 shadow-md">
+                <div className="w-28 bg-white rounded-t-full shadow-md p-2">
+                  <div className="w-24 bg-[#fdcd02] rounded-t-full p-4">
+                    <h1 className="text-sm lg:text-xl font-semibold text-center pt-2">
+                      Super sale!
+                    </h1>
                   </div>
                 </div>
               </div>
-        
-              </div>
-    </div>
-  )
-}
+            </div>
+          </div>
+
+          {/* CONTENT */}
+          <div className="order-2 lg:order-2">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-black capitalize">
+              Get a plot for your
+              <span className="text-[#fdcd02]"> Dream Home</span>
+            </h1>
+
+            <p className="pt-5 text-sm sm:text-lg">
+              When you choose a plot, you choose possibilities. Plan a spacious home,
+  thoughtful design, and long-term comfort — built on land that supports
+  your future, not just your present.
+            </p>
+
+            {/* FEATURE 1 */}
+            <div className="mt-10 flex items-start gap-4">
+  <Image
+    src="/assets/rupeeicon.png"
+    alt="icon"
+    width={28}
+    height={28}
+    className="mt-1 shrink-0"
+  />
+
+  <div>
+    <h2 className="text-xl lg:text-2xl font-semibold mb-2">
+      The ability to identify plot market
+    </h2>
+    <p className="text-sm sm:text-base leading-relaxed">
+      Understand the true potential of a location before you invest. From future
+  infrastructure and connectivity to appreciation trends, we help you
+  identify plots that hold long-term value, not just present appeal.
+    </p>
+  </div>
+</div>
+
+            {/* FEATURE 2 */}
+            <div className="mt-8 flex items-start gap-4">
+  <Image
+    src="/assets/partnershipicon.png"
+    alt="icon"
+    width={28}
+    height={28}
+    className="mt-1 shrink-0"
+  />
+
+  <div>
+    <h2 className="text-xl lg:text-2xl font-semibold mb-2">
+      The ability to provide convenience
+    </h2>
+    <p className="text-sm sm:text-base leading-relaxed">
+      Buying a plot should bring peace of mind, not paperwork stress. We help
+  you navigate legal checks, clear titles, and documentation so your
+  investment remains safe, transparent, and future-proof.
+    </p>
+  </div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default Services

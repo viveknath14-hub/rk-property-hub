@@ -44,19 +44,20 @@ export default function Header() {
 
   return (
     <header className="bg-white">
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-0 lg:px-8">
-        <div className="flex lg:flex-1">
-          <Link href="#" className="-m-1.5 p-1.5">
+      <nav aria-label="Global" className="relative mx-auto flex max-w-7xl items-center px-4 lg:px-8">
+        <div className="flex flex-1">
+          <Link href="#" className="flex items-center">
             <Image
               src="/rkPropertyHub.png"
               alt="RK Property Hub logo"
-              width={190}
-              height={80}
+              width={160}
+              height={48}
+              className='object-contain w-[150px] '
               priority
             />
           </Link>
         </div>
-        <div className="flex lg:hidden">
+        <div className=" lg:hidden">
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
@@ -88,8 +89,12 @@ export default function Header() {
           {/* <Link href="#" className="text-lg font-normal tracking-wide text-gray-900 flex items-center gap-2">
             Log in <ArrowRight size={20} />
           </Link> */}
+          <Link href="/contact#contact">
           <Button><User2Icon size={20} />Contact us</Button>
+          </Link>
+          <Link href="/contact#visit">
           <Button variant="secondary"><MapPinHouse size={20} />Visit now</Button>
+          </Link>
         </div>
       </nav>
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
@@ -124,9 +129,9 @@ export default function Header() {
                 <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Facilities</Link>
                 <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Blogs</Link>
               </div>
-              <div className="py-6">
+              {/* <div className="py-6">
                 <Link href="#" className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</Link >
-              </div>
+              </div> */}
 
             </div>
           </div>

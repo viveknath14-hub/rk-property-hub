@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 
 export const page = () => {
@@ -9,7 +10,7 @@ export const page = () => {
       <section className="relative h-[70vh] flex items-center justify-center">
         {/* Background Image */}
         <img
-          src="/assets/services-hero.jpg"
+          src="/assets/services.jpg"
           alt="Real estate services"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -76,14 +77,17 @@ export const page = () => {
               {
                 title: "Residential Properties",
                 desc: "Buying, selling, and renting of homes, apartments, plots, and builder floors.",
+                img: "/assets/residence.jpg",
               },
               {
                 title: "Commercial Spaces",
                 desc: "Offices, shops, showrooms, and commercial units for sale, purchase, or lease.",
+                img: "/assets/commercial.jpg",
               },
               {
                 title: "Industrial Properties",
                 desc: "Industrial areas, warehouses, factories, and sheds for rent, sale, and purchase.",
+                img: "/assets/industrial.jpg",
               },
             ].map((item, index) => (
               <div
@@ -93,7 +97,13 @@ export const page = () => {
                            transition-all duration-300"
               >
                 {/* Image placeholder */}
-                <div className="h-40 bg-gray-200 rounded-lg mb-6" />
+                <Image
+            src={item.img}
+            alt={item.title}
+            width={400}
+            height={250}
+            className="rounded-lg mb-6 object-cover"
+              />
 
                 <h3 className="text-xl font-semibold mb-3">
                   {item.title}
@@ -128,8 +138,15 @@ export const page = () => {
           </div>
 
           {/* Image placeholder */}
-          <div className="h-72 bg-gray-200 rounded-2xl" />
-        </div>
+          <div className="relative h-72 rounded-2xl overflow-hidden bg-gray-200">
+            <Image
+              src="/assets/finAdvice.jpg"
+              alt="Financial and property advisory support"
+              fill
+              className="object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+          </div>
       </section>
 
       {/* DDA & MCD LIAISONING */}
@@ -139,8 +156,15 @@ export const page = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
 
       {/* Image — LEFT */}
-      <div className="h-72 bg-gray-200 rounded-2xl order-2 md:order-1" >
-        </div>
+      <div className="relative h-72 rounded-2xl overflow-hidden bg-gray-200 order-2 md:order-1">
+        <Image
+          src="/assets/liaison.jpg"
+          alt="DDA and MCD liaisoning services"
+          fill
+          className="object-cover hover:scale-105 transition duration-500"
+        />
+      </div>
+
 
       {/* Text — RIGHT */}
       <div className="order-1 md:order-2">

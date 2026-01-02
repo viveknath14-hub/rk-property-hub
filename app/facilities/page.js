@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const page = () => {
@@ -8,7 +9,7 @@ const page = () => {
       {/* HERO SECTION */}
       <section className="relative h-[65vh] flex items-center justify-center">
         <img
-          src="/assets/facilities-hero.jpg"
+          src="/assets/facilities11.jpg"
           alt="Industrial and commercial real estate facilities in Delhi NCR"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -47,26 +48,32 @@ const page = () => {
               {
                 title: "Industrial Property Facilities",
                 desc: "Dedicated facilities for renting, buying, and selling industrial areas, warehouses, factories, and sheds across key industrial zones of Delhi NCR.",
+                img: "/assets/industryfac.jpg",
               },
               {
                 title: "Legal & Documentation Support",
                 desc: "Comprehensive documentation and legal support for industrial, commercial, and residential properties ensuring compliance and risk-free transactions.",
+                img: "/assets/documentfac.jpg",
               },
               {
                 title: "Property Chain Verification",
                 desc: "Detailed verification of property ownership chains to identify risks, missing links, or discrepancies—critical for high-value industrial assets.",
+                img: "/assets/chainfac.jpg",
               },
               {
                 title: "Banking & Loan Assistance",
                 desc: "Advisory support backed by banking experience to guide clients on loans, financial feasibility, and funding options for property transactions.",
+                img: "/assets/loanfac.jpg",
               },
               {
                 title: "Residential & Commercial Facilities",
                 desc: "End-to-end facilities for homes, builder floors, offices, shops, and commercial spaces with structured processes and clear documentation.",
+                img: "/assets/resconfac.jpg",
               },
               {
                 title: "DDA & MCD Liaisoning Services",
                 desc: "Professional liaisoning support with DDA, MCD, and related authorities for property maps, layout plans, approvals, and compliance requirements.",
+                img: "/assets/liaisonfac.jpg",
               },
             ].map((item, index) => (
               <div
@@ -76,7 +83,14 @@ const page = () => {
                            transition-all duration-300"
               >
                 {/* Image placeholder */}
-                <div className="h-40 bg-gray-200 rounded-lg mb-6" />
+                  <div className="relative h-40 rounded-lg mb-6 overflow-hidden bg-gray-200">
+            <Image
+              src={item.img}
+              alt={item.title}
+              fill
+              className="object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
 
                 <h3 className="text-xl font-semibold mb-3">
                   {item.title}
