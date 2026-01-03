@@ -8,11 +8,14 @@ const page = () => {
         <div className="bg-white text-black">
 
       {/* HERO SECTION */}
-      <section className="relative h-[90vh] flex items-center justify-center">
-        <img
+      <section className="relative h-[90vh] overflow-hidden flex items-center justify-center">
+        <Image
           src="/assets/facilities11.jpg"
           alt="Industrial and commercial real estate facilities in Delhi NCR"
-          className="absolute inset-0 w-full h-full object-cover"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-black/50" />
 

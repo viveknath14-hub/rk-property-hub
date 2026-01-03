@@ -1,6 +1,8 @@
 import { PhoneIcon } from '@heroicons/react/24/outline'
-import { Link, LocateFixedIcon, LocateIcon, MapIcon, MapPin, MessageCircleIcon, Phone } from 'lucide-react'
+import {LocateFixedIcon, LocateIcon, MapIcon, MapPin, MessageCircleIcon, Phone } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
+
 
 const page = () => {
   return (
@@ -72,8 +74,10 @@ const page = () => {
             <div className="overflow-hidden rounded-xl border border-gray-200 mb-5">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4571.5760450882635!2d77.08755546348416!3d28.725662570915382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d07b939bad1c7%3A0xb2a34370ed501837!2sRK%20Property%20Hub!5e0!3m2!1sen!2sin!4v1766837360145!5m2!1sen!2sin"
-                className="w-full h-[320px] border-0"
+                className="w-full h-80 border-0"
                 loading="lazy"
+                fetchPriority='low'
+                referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
 
@@ -100,12 +104,13 @@ const page = () => {
       Whether it’s residential, commercial, or industrial property, we help you move forward with clarity and confidence.
     </p>
 
-    <a
+    <Link
       href="/contact"
+      prefetch={false}
       className="inline-block mt-8 bg-primary text-black font-medium px-8 py-3 rounded-lg hover:bg-yellow-400 transition"
     >
       Get in Touch
-    </a>
+    </Link>
   </div>
 </section>
     </div>
