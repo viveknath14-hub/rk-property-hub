@@ -24,7 +24,7 @@ const featuresData = [
     },
     secondaryAction: {
       title: "Book now",
-      subtitle: "Home on rent",
+      subtitle: "A business space",
     },
   },
   {
@@ -36,7 +36,7 @@ const featuresData = [
     },
     secondaryAction: {
       title: "Book now",
-      subtitle: "Home on rent",
+      subtitle: "A plot of land",
     },
   },
 ]
