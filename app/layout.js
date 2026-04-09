@@ -14,6 +14,7 @@ const jost = Jost({
 export const metadata = {
   title: "RK Property Hub | Real Estate Consultants in Delhi NCR",
   description: "RK Property Hub offers trusted residential, commercial, and industrial real estate services across Delhi NCR.",
+  manifest: "/manifest.json",
 };
 
 export default function RootLayout({ children }) {
