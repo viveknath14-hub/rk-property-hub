@@ -1,3 +1,4 @@
+
 import { Jost } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/Header";
@@ -16,6 +17,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+
   return (
     <html lang="en">
       <body
